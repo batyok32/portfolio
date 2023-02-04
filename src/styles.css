@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+html {
+    font-family: 'Fira Code', monospace !important;
+
+    --primary:#64ffda;
+    --secondary:#8892b0;
+    --green:#64ffda;
+    --dark-blue:#0A192F;
+    --light-blue: rgba(136, 146, 176, 0.2);
+    --blue:#112240;
+}
+
+body {
+    margin: 0;
+    background: #0A192F;
+    color: #ccd6f6;
+    font-family: 'Fira Code', monospace !important;
+    height: 200vh;
+
+}
+
+.ff-apple {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.text-main {
+    color: var(--primary);
+}
+
+
+.text-main-hover:hover {
+    color: var(--primary);
+}
+
+.text-underline {
+    display: inline-block;
+}
+
+.text-underline::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: var(--primary);
+    transition: 300ms;
+}
+
+
+.text-underline:hover::after {
+    width: 100%;
+}
+
+.text-secondary {
+    /* color:#5c7ddf; */
+    color:var(--secondary) !important;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.btn-outline-main {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    background: transparent;
+    font-weight: 300;
+    outline: none !important;
+    box-shadow: none !important;
+    transition: all 150ms ease-in;
+}
+
+
+.btn-outline-main:hover {
+    color: var(--primary);
+    background: rgba(100, 255, 218, 0.1);
+}
+
+.moving-mail-on-hover {
+    transition: all 250ms ease-in-out;
+}
+.moving-mail-on-hover:hover {
+    margin-top: -5px;
+}
+
+.about-border {
+    bottom: 85px;
+    right: 90px;
+    transition: all 200ms ease-in-out;
+}
+.about-active {
+    bottom: 90px !important;
+    right: 100px !important;
+}
+
+.skills-menu li {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: top;
+}
+
+.skills-menu li::before {
+    content:  "▹";
+    padding-top: 3px;
+    position: absolute;
+    left: 0px;
+    color: var(--green);
+    line-height: 12px;
+}
+
+
+.workitem {
+    color: var(--secondary) ;
+    font-size: 13px;
+    text-align: start;
+    border-radius: 1px;
+    border: 0;
+    border-left: 2px solid rgba(136, 146, 176, 0.2);
+    outline: none;
+    box-shadow: none !important;
+}
+
+.workitem:hover {
+    color: var(--green);
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+.workitem.active {
+    color: var(--green);
+    border-left: 2px solid var(--green);
+    /* background-color: rgba(100, 255, 218, 0.1); */
+}   

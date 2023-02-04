@@ -1,0 +1,13 @@
+{
+	"error1": "You must be logged in to post comment!",
+	"error2": "You must be logged in to delete order!",
+	"error3": "Что то пошло не так!",
+	"error4": "No such a user or invalid password",
+	"error5": "User already exists",
+	"error6": "Please, shop before order!",
+	"error7": "Please fill fields correctly!",
+	"error8": "Not Correct Coupon Code!",
+	"error9": "Please write something!",
+	"error10": "No products!",
+	"error11": "Your username and password is similar!    Change username or password!"
+}
